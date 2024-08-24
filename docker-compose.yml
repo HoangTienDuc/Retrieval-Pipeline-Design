@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    runtime: nvidia
+    ports:
+        - 11434:11434
+    volumes:
+        - ./ollama/ollama:/root/.ollama
+        - ./entrypoint.sh:/entrypoint.sh
+    container_name: ollama
+    pull_policy: always
+    tty: true
+    restart: always
+    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
