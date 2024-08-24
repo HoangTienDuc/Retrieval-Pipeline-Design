@@ -5,6 +5,7 @@
 - Prerequires
 - Installation and Inference
 - How to use 
+- Testing with hallucination
 - TODO
 
 ## INTRODUCTION
@@ -75,6 +76,17 @@ Time to search for single image: 4.697-05s
 ```
 Time to retrieve a query string: 0.244s
 ```
+
+## Testing with hallucination
+```
+python3 tools/test_hallucination.py
+
+response = "รัดย่องมีการที่สมินวัด"
+context = 'A. Phí khởi tạo dịch vụ và đào tạo\n\n\n\n\n\n\n\n\n\n\n\n1\nPhí khởi tạo hệ thống\nDịch vụ\n2000000\n1\n2000000\n\n0\n2000000\nPhí khởi tạo dịch vụ bao gồm: phí cấu hình hệ thống và phí khởi tạo dữ liệu ban đầu Thanh toán một lần duy nhất Buổi\n1000000\n3\n3000000\n0.666667\n2000000\n1000000\nChi phí đào tạo triển khai tính theo số lớp khách hàng đăng ký đào tạo: 1.000.000 đồng / 01 buổi áp dụng cho đào tạo trực tiếp khu vực Hà Nội và Thành phố Hồ Chí Minh và trực tuyến ở tất cả các tỉnh/thành phố / 1 năm\\n- Dịch vụ hỗ trợ trực tuyến trong suốt thời gian vận hành miễn phí\\n- Thời gian đăng ký sử dụng tối thiểu 12 tháng. Thanh toán phí sử dụng 1 lần vào đầu kỳ thanh toán. 15\n\nCảnh báo khối lượng thực tế vượt khối lượng kế hoạch bằng text màu đỏ cả dòng công việc\n\n\n16\nHợp đồng giao thầu\nQuản lý chi tiết thông tin hợp đồng ký với thầu phụ: GTHĐ,phụ lục đính kèm, và bảng khối lượng thi công từng hạng mục(BOQ) ký với thầu phụ'
+
+{'is_hallucination': True, 'similarity_score': 0.5371037183400404, 'common_words': []}
+```
+
 
 ## TODO
 - [ ] Combine both vector and word queries

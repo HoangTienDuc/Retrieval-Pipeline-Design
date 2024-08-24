@@ -7,5 +7,5 @@ docs/dog_3.png
 docs/dog_1.jpg
 docs/city_1.jpeg
 docs/cat_2.jpg
+docs/pipeline.png
 docs/dog_2.jpeg
-docs/1.png
