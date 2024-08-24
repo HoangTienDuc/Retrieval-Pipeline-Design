@@ -1,0 +1,11 @@
+docs/cat_1.jpg
+docs/cat_3.jpeg
+docs/city_2.jpg
+docs/city_3.jpg
+docs/cat_4.jpeg
+docs/dog_3.png
+docs/dog_1.jpg
+docs/city_1.jpeg
+docs/cat_2.jpg
+docs/dog_2.jpeg
+docs/1.png
