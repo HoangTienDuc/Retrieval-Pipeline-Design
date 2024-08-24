@@ -65,6 +65,16 @@ python3 run.py
 - To retrieve with documentation: comment line 120, 122, the uncomment line 121 
 - To detect hallucination: comment lines 121, 122, the uncomment line 120
 
+## Benchmark
+- For image retrieve
+```
+Time to embedding for single image: 0.071s
+Time to search for image: 4.697-05s
+```
+- For document retrieve
+```
+Time to retrieve a query string: 0.244s
+```
 
 ## TODO
 - [ ] Combine both vector and word queries
