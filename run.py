@@ -118,8 +118,8 @@ def detect_hallucinations(response, context):
 if __name__ == "__main__":
     data_source = "docs"
     # query = "Phi khoi tao he thong" # To check hallucination
-    # query = "What is Amazon Bedrock?" # To documents
-    query = "docs/cat_3.jpeg" # To retrieve image
+    query = "What is Amazon Bedrock?" # To documents
+    # query = "docs/cat_3.jpeg" # To retrieve image
     # data = preprocess_data(data_source)
     # create_index(data)
     response, context = retrieve_documents(query)

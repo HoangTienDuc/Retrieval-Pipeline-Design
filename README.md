@@ -69,7 +69,7 @@ python3 run.py
 - For image retrieve
 ```
 Time to embedding for single image: 0.071s
-Time to search for image: 4.697-05s
+Time to search for single image: 4.697-05s
 ```
 - For document retrieve
 ```
