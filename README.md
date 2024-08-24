@@ -28,6 +28,7 @@ By running the system locally on a GPU RTX 3060 with 16GB RAM, it maintains a hi
 - Transformers
 - Langchain
 - Nvidia docker
+- Docker compose
 
 
 ## INSTALLATION AND INFERENCE
